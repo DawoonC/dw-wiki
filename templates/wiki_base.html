@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>DW WIKI</title>
+		<link rel="stylesheet" href="/style/main.css" type="text/css">
+	</head>
+
+
+	<body>
+		<a class="list-page" href="/list">List</a>
+		<div class="separator3">|</div>
+		<a class="newpost" href="/_newpost">Newpost</a>
+		<div class="separator4">|</div>
+		<a class="flush" href="/flush">Flush</a>
+		{% if user %}
+			<a class="signup" href="/logout">{{user.username}} (logout)</a>
+		{% else %}
+			<a class="signup" href="/signup">Signup</a>
+			<div class="separator1">|</div>
+			<a class="login" href="/login">Signin</a>
+		{% endif %}
+		<a class="main-title" href="/">DW WIKI</a>
+				
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>

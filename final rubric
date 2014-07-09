@@ -1,0 +1,43 @@
+Final Project
+
+edit|history	login|signup
+
+# you can go to any url, and if the url does not exist,
+  it will redirect to another url
+  e.g.) /newpage -> redirect to -> /_edit/newpage
+  	   (not exist)					(edit page with the input title)
+
+  	   after edit, it will redirect to created /newpage
+  	   # created page must be editable
+
+# to edit the page, user must be logged in
+# if the user is not logged in or logged out, the page is only for view
+
+# history link
+# /_history url shows history of the page
+	e.g.) date/time    contents (maybe only 100 characters displayed)   view|edit
+# old version can be viewed from history page
+	e.g.) view redirects to /?v=2 or /?v=3
+
+# history of titled page will be have url like this
+	e.g.) /_history/newpage
+
+
+
+Final Project Rubric
+
+1. submitted wiki url passes the autograder & is usable by the human grader
+	- exceed specs by pass bonus autograder
+
+2. code should be readable per the CM's Best Practices in Programming
+	- follow the style guide
+
+3. code is well structured 
+	- code follows an intuitive, easy-to-follow logical structure
+
+4. code is well commented
+	- code that is not intuitively readable is well-documented with comments
+
+5. code follows consistent naming conventions
+	- similar coding constructs (classes, functions, variables, etc) use similar naming conventions
+

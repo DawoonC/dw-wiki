@@ -1,0 +1,16 @@
+{% extends "wiki_base.html" %}
+{% block content %}
+
+	{% for posting in list_page %}
+		<div class="post">
+			<div class="post-heading">
+				<a class="post-title" href="/{{posting.subject}}">/{{posting.subject}}</a>
+				<a class="post-sample" href="/{{posting.subject}}">{{posting.content[:40]}}</a>
+				<div class="post-author">{{posting.author}}</div>
+				<div class="post-date">{{posting.submitted.strftime("%b %d, %Y")}}</div>
+			</div>
+		</div>
+	{% endfor %}
+	
+{% endblock %}
+	

@@ -1,0 +1,38 @@
+{% extends "wiki_base.html" %}
+{% block content %}
+	{% if user %}
+		<a class="edit" href="/_edit{{path}}">Edit</a>
+		<div class="separator2">|</div>
+	{% endif %}
+	<a class="history" href="/_history{{path}}">History</a>
+
+
+	
+
+	<form method="post">
+		<table align="center" class="history-table">
+			<tbody>
+				{% for posting in posts %}
+					<tr class="table-row">
+						<td class="table-box">
+							{{posting.submitted.strftime("%a %b %d %X %Y")}}
+						</td>
+						<td class="table-box">
+							{{posting.content[:70]}}
+						</td>
+						<td class="table-box">
+							{{posting.author}}
+						</td>
+						<td>
+							<a class="links" href="{{path}}?version={{posting.key().id()}}">view</a>
+							<a class="links" href="/_edit{{path}}?version={{posting.key().id()}}">edit</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+	</form>
+
+	
+{% endblock %}
