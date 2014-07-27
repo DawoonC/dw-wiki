@@ -5,6 +5,7 @@ A wiki page for final project of Web Development course at Udacity.
 Most of codes for the handlers were taught by Steve Huffman during the Web Development course, and I used Google Web Starter Kit template for my base HTML page. Only few were written by my self.
 
 Web Development at Udacity: https://www.udacity.com/course/cs253
+<br>
 Google Web Starter Kit: https://github.com/google/web-starter-kit
 
 ### License
