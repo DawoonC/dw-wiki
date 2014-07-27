@@ -1,1 +1,2 @@
-.sass-cache/
+templates/.sass-cache
+templates/node_modules

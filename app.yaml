@@ -9,12 +9,44 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /style
-  static_dir: style
+- url: /fonts
+  static_dir: templates/dist/fonts
+
+- url: /images
+  static_dir: templates/dist/images
+
+- url: /scripts
+  static_dir: templates/dist/scripts
+
+- url: /styles
+  static_dir: templates/dist/styles
+
+- url: /_edit/fonts
+  static_dir: templates/dist/fonts
+
+- url: /_edit/images
+  static_dir: templates/dist/images
+
+- url: /_edit/scripts
+  static_dir: templates/dist/scripts
+
+- url: /_edit/styles
+  static_dir: templates/dist/styles
+
+- url: /_history/fonts
+  static_dir: templates/dist/fonts
+
+- url: /_history/images
+  static_dir: templates/dist/images
+
+- url: /_history/scripts
+  static_dir: templates/dist/scripts
+
+- url: /_history/styles
+  static_dir: templates/dist/styles
 
 - url: .*
   script: main.app
-
 
 libraries:
 - name: webapp2
@@ -22,4 +54,9 @@ libraries:
 
 - name: jinja2
   version: latest
-  
+
+skip_files:
+- ^templates/app
+- ^templates/node_modules
+- ^templates/.sass-cache
+

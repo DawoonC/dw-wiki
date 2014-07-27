@@ -1,9 +1,12 @@
 # DW WIKI
-A wiki page for final project of Web Development course from Udacity.
+A wiki page for final project of Web Development course at Udacity.
 
-### Notes for the codes in the project
-Most of codes were taught by Steve Huffman during the Web Development course, and only few were written by my self.
+## Notes for the codes in the project
+Most of codes for the handlers were taught by Steve Huffman during the Web Development course, and I used Google Web Starter Kit template for my base HTML page. Only few were written by my self.
 
-## License
-No license
+Web Development at Udacity: https://www.udacity.com/course/cs253
+Google Web Starter Kit: https://github.com/google/web-starter-kit
+
+### License
+No license information
 

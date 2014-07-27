@@ -17,7 +17,8 @@
 import webapp2
 
 # URL Routing Table
-PAGE_RE = r'(/(?:[a-zA-Z0-9_-]+/?)*)'
+#PAGE_RE = r'(/(?:[a-zA-Z0-9_-]+/?)*)'
+PAGE_RE = r'(/(?:.+/?)*)'
 app = webapp2.WSGIApplication(
 	[(r'/_edit' + PAGE_RE, "handlers.editPage.EditPage"), 
 	 (r'/signup', "handlers.signupPage.Register"), 

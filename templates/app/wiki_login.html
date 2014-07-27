@@ -1,0 +1,45 @@
+{% extends "wiki_base.html" %}
+{% block content %}
+
+	<h2><u>Signin</u></h2>
+
+	<form method="post">
+		<table>
+			<tbody>
+				<tr>
+					<td class="label">
+						Username
+					</td>
+				</tr>
+				<tr>
+					<td class="user-form">
+						<input type="text" name="username" value="{{username}}">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="label">
+						Password
+					</td>
+				</tr>
+				<tr>
+					<td class="user-form">
+						<input type="password" name="password" value="{{password}}">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="error">
+						<div class="error">{{error}}</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<input type="submit" value="Submit!">
+		<input type="hidden" name="next_url" value="{{next_url}}">
+	</form>
+
+	
+{% endblock %}

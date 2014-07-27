@@ -27,6 +27,10 @@ class EditPage(handler.Handler):
 		content = self.request.get('content')
 		old_page = Wiki.Wiki.by_path(path).get()
 		subject = self.request.get('subject')
+		if ' ' in subject:
+			subject = subject.replace(' ', '_')	
+		if '?' in subject:
+			subject = subject.replace('?', '')	
 
 		if path == '/_newpost': # this block is for "Newpost" button on the page. 
 			if subject and content:

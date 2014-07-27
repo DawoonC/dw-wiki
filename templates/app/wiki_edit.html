@@ -1,0 +1,39 @@
+{% extends "wiki_base.html" %}
+{% block content %}
+		
+	<form method="post">
+		{% if path == '/_newpost' %}
+			<label>
+				<div class="wiki-subject">Title</div>
+				<input type="text" name="subject" placeholder="Type your title in English" value="{{page.subject}}">
+			</label>
+		{% endif %}
+
+		<label>
+			<div class="wiki-content">Contents</div>
+			<textarea name="content" placeholder="Type your content here">{{page.content}}</textarea>
+		</label>
+
+		<div class="error">{{error}}</div>
+
+		<input type="submit" value="Submit!">
+		{% if page %}
+			<input type="hidden" name="version" value="{{page.key().id()}}">
+		{% endif %}
+	</form>
+
+	
+{% endblock %}
+
+{% if exist %}
+	{% block tabbar %}
+		<nav class="tab-bar promote-layer">
+			<ul>
+				{% if user %}
+					<li><a href="{{path}}">View</a></li>
+				{% endif %}
+				<li><a href="/_history{{path}}">History</a></li>
+			</ul>
+		</nav>
+	{% endblock %}
+{% endif %}
