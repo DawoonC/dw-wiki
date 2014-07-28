@@ -13,4 +13,4 @@ No license information
 
 <br>
 <i>If you are interested in the result of this project, you can find at: http://dw-wiki.appspot.com/</i>
-<br><i>This page was built on Google App Engine.</i>
+<br><i>This project was built on Google App Engine.</i>
