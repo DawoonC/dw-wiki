@@ -12,4 +12,4 @@ Google Web Starter Kit: https://github.com/google/web-starter-kit
 No license information
 
 <br>
-<i>If you are interested in result of this project, you can see at: http://dw-wiki.appspot.com/</i>
+<i>If you are interested in the result of this project, you can find at: http://dw-wiki.appspot.com/</i>
